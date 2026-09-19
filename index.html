@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  VISION36's name, email, country (India) and today's date are
+  already filled in below. Two things still need your input —
+  search the file for each to find every spot:
+
+    Arrow Rush: Puzzle Game   the final title once you've picked one (7 spots)
+    com.vision36.arrow.puzzle     your app ID, e.g. in.vision36.arrowix
+
+  Keep the URL of this page stable once published. Paste the same
+  URL into:
+    Play Console > Store listing > Privacy policy
+    Play Console > App content > Privacy policy
+    and link it from the app's Settings screen (Google requires both).
+
+  Shipping more games later under VISION36: duplicate this file,
+  swap Arrow Rush: Puzzle Game and com.vision36.arrow.puzzle, keep the rest — the wording
+  already accounts for you publishing more than one app.
+  ============================================================
+-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Arrow Rush: Puzzle Game</title>
+  <meta name="description"
+    content="How the Arrow Rush: Puzzle Game Android game by VISION36 handles data: what Google AdMob, Firebase Analytics and Crashlytics collect, and how to opt out.">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --paper: #ffffff;
+      --ink: #131c2b;
+      --muted: #5c6b80;
+      --rule: #e2e8f0;
+      --navy: #0d1426;
+      --navy-2: #182541;
+      --link: #12679f;
+      --mark: #38b6f5;
+      --box: #f2f7fb;
+      --box-edge: #cfe4f3;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #0f1727;
+        --ink: #dfe7f2;
+        --muted: #93a3ba;
+        --rule: #26324a;
+        --navy: #080d18;
+        --navy-2: #111b31;
+        --link: #6cc6ff;
+        --box: #141f36;
+        --box-edge: #26405e;
+      }
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 400 1.0625rem/1.75 "Source Serif 4", Georgia, "Times New Roman", serif;
+    }
+
+    .wrap {
+      max-width: 43rem;
+      margin: 0 auto;
+      padding: 0 1.5rem
+    }
+
+    header {
+      background: var(--navy);
+      color: #fff;
+      padding: 3rem 0 2.75rem;
+      background-image: linear-gradient(135deg, var(--navy-2), var(--navy) 70%)
+    }
+
+    header .wrap {
+      display: flex;
+      gap: 1.15rem;
+      align-items: center
+    }
+
+    header svg {
+      flex: none;
+      width: 52px;
+      height: 52px
+    }
+
+    header h1 {
+      margin: 0;
+      font: 600 1.6rem/1.2 Poppins, system-ui, sans-serif;
+      letter-spacing: -.01em
+    }
+
+    header p {
+      margin: .3rem 0 0;
+      font: 500 .9rem/1.4 Poppins, system-ui, sans-serif;
+      color: #9fc3e0
+    }
+
+    main {
+      padding: 2.5rem 0 4rem
+    }
+
+    h2 {
+      margin: 2.75rem 0 .75rem;
+      font: 600 1.18rem/1.35 Poppins, system-ui, sans-serif;
+      letter-spacing: -.005em;
+      scroll-margin-top: 1rem
+    }
+
+    h2 .n {
+      color: var(--muted);
+      font-weight: 500;
+      margin-right: .55rem
+    }
+
+    h3 {
+      margin: 1.6rem 0 .4rem;
+      font: 600 1rem/1.4 Poppins, system-ui, sans-serif
+    }
+
+    p {
+      margin: 0 0 1.05rem
+    }
+
+    ul {
+      margin: 0 0 1.05rem;
+      padding-left: 1.15rem
+    }
+
+    li {
+      margin: .4rem 0
+    }
+
+    a {
+      color: var(--link);
+      text-underline-offset: 2px
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--link);
+      outline-offset: 3px;
+      border-radius: 2px
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--rule);
+      margin: 2.5rem 0
+    }
+
+    .date {
+      color: var(--muted);
+      font: 500 .875rem/1.5 Poppins, system-ui, sans-serif;
+      margin: 0 0 2rem
+    }
+
+    .summary {
+      background: var(--box);
+      border: 1px solid var(--box-edge);
+      border-radius: 14px;
+      padding: 1.4rem 1.5rem .5rem
+    }
+
+    .summary h2 {
+      margin-top: 0
+    }
+
+    .summary ul {
+      padding-left: 1.1rem
+    }
+
+    .toc {
+      margin: 2rem 0 0;
+      padding: 0;
+      list-style: none;
+      font: 500 .93rem/1.9 Poppins, system-ui, sans-serif;
+      columns: 2;
+      column-gap: 2rem
+    }
+
+    .toc a {
+      text-decoration: none
+    }
+
+    .toc a:hover {
+      text-decoration: underline
+    }
+
+    @media (max-width:32rem) {
+      .toc {
+        columns: 1
+      }
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 0 1.15rem;
+      font: 400 .95rem/1.55 "Source Serif 4", Georgia, serif
+    }
+
+    th,
+    td {
+      text-align: left;
+      vertical-align: top;
+      padding: .6rem .7rem;
+      border-bottom: 1px solid var(--rule)
+    }
+
+    th {
+      font: 600 .82rem/1.4 Poppins, system-ui, sans-serif;
+      color: var(--muted)
+    }
+
+    .scroller {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch
+    }
+
+    .fill {
+      background: #fff2b8;
+      color: #4a3c00;
+      padding: 0 .2em;
+      border-radius: 3px;
+      font-family: Poppins, system-ui, sans-serif;
+      font-size: .92em
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .fill {
+        background: #4a3c00;
+        color: #ffe98a
+      }
+    }
+
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 1.75rem 0 3rem;
+      color: var(--muted);
+      font: 500 .85rem/1.6 Poppins, system-ui, sans-serif
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="wrap">
+      <img src="./game_icon.png" alt="" width="52" height="52">
+      <div>
+        <h1><span class="fill">Arrow Rush: Puzzle Game</span> — Privacy Policy</h1>
+        <p>Applies to the Android app <span class="fill">com.vision36.arrow.puzzle</span></p>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <p class="date">Effective 19 September 2026 · Last updated 19 September 2026</p>
+
+    <div class="summary">
+      <h2>The short version</h2>
+      <ul>
+        <li>There is no sign-up. We never ask for your name, email or phone number.</li>
+        <li>Your puzzle progress is saved on your own device, not on our servers.</li>
+        <li>The game shows ads and reports crashes, so Google receives your device's
+          advertising ID, basic device details and anonymous usage events.</li>
+        <li>You can turn off personalised ads, or delete your advertising ID entirely,
+          from your Android settings at any time.</li>
+      </ul>
+      <p>The rest of this page is the detailed version. It is written to match our
+        Data safety declaration on Google Play.</p>
+    </div>
+
+    <ol class="toc">
+      <li><a href="#who">Who we are</a></li>
+      <li><a href="#collect">What we collect</a></li>
+      <li><a href="#services">Services we use</a></li>
+      <li><a href="#why">Why we use it</a></li>
+      <li><a href="#legal">Legal basis</a></li>
+      <li><a href="#choices">Your choices</a></li>
+      <li><a href="#rights">Your rights</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#retention">How long we keep it</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#transfers">International transfers</a></li>
+      <li><a href="#changes">Changes</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+
+    <hr>
+
+    <h2 id="who"><span class="n">1</span>Who we are</h2>
+    <p><span class="fill">Arrow Rush: Puzzle Game</span> is developed and published by VISION36
+      ("we", "us"). We are the data controller for the information described here.
+      You can reach us at <a href="mailto:contact.feedback.store@gmail.com">contact.feedback.store@gmail.com</a>, or
+      through
+      our other games at <a href="https://vision36.in" rel="noopener">vision36.in</a>.</p>
+    <p>This policy covers the <span class="fill">Arrow Rush: Puzzle Game</span> Android app distributed through Google
+      Play.
+      It does not cover any other VISION36 app, and each of our other apps links
+      its own copy of this policy from its own store listing.</p>
+
+    <h2 id="collect"><span class="n">2</span>What we collect</h2>
+
+    <h3>Information you give us</h3>
+    <p>None. The game has no account, no login and no contact form. If you choose to
+      email us about a bug, we will have your email address and whatever you write —
+      nothing more.</p>
+
+    <h3>Information stored on your device only</h3>
+    <p>Your level progress, stars, hint count and settings are written to your phone's
+      local storage. We cannot read them, and they are removed when you uninstall the
+      game. If you have Android Backup switched on, Google may include this file in your
+      personal device backup under
+      <a href="https://policies.google.com/privacy" rel="noopener">Google's own privacy policy</a>.
+    </p>
+
+    <h3>Information collected automatically</h3>
+    <p>Our advertising and diagnostics providers collect the following while you play:</p>
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Collected by</th>
+            <th>Play Data safety category</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Advertising ID (a resettable identifier, not your name)</td>
+            <td>Google AdMob</td>
+            <td>Device or other IDs</td>
+          </tr>
+          <tr>
+            <td>App instance ID</td>
+            <td>Firebase Analytics</td>
+            <td>Device or other IDs</td>
+          </tr>
+          <tr>
+            <td>Device model, OS version, language, screen size, mobile network and country</td>
+            <td>AdMob, Firebase</td>
+            <td>Device or other IDs</td>
+          </tr>
+          <tr>
+            <td>IP address, used to derive an approximate region and to serve ads</td>
+            <td>AdMob, Firebase</td>
+            <td>Approximate location</td>
+          </tr>
+          <tr>
+            <td>In-game events: levels started and finished, hints used, session length, ads viewed or clicked</td>
+            <td>Firebase Analytics, AdMob</td>
+            <td>App activity</td>
+          </tr>
+          <tr>
+            <td>Crash reports, stack traces, device state at the moment of a crash</td>
+            <td>Firebase Crashlytics</td>
+            <td>App info and performance</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>We do not collect your precise GPS location, contacts, photos, microphone,
+      camera, files, calendar, SMS or call logs. We do not ask for those permissions.</p>
+
+    <h2 id="services"><span class="n">3</span>Services we use</h2>
+    <p>These are third-party services built into the app. Each one collects data under
+      its own privacy policy, and we cannot control what they do with it beyond the
+      settings they give us.</p>
+    <ul>
+      <li><strong>Google AdMob</strong> — serves the ads that keep the game free.
+        <a href="https://support.google.com/admob/answer/6128543" rel="noopener">AdMob and privacy</a> ·
+        <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses data from apps
+          that use its services</a>
+      </li>
+      <li><strong>Firebase Analytics</strong> — tells us which levels people get stuck on,
+        so we can rebalance them.
+        <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy and security</a>
+      </li>
+      <li><strong>Firebase Crashlytics</strong> — sends us a report when the game crashes
+        so we can fix it. Reports are tied to an installation, not to you.</li>
+      <li><strong>Google Play services</strong> — required by Android to distribute and
+        update the app. <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a></li>
+    </ul>
+    <p>Data from AdMob is shared with Google for advertising purposes. Data from Firebase
+      Analytics and Crashlytics is processed by Google on our behalf, for our own use.</p>
+
+    <h2 id="why"><span class="n">4</span>Why we use it</h2>
+    <ul>
+      <li><strong>To show ads.</strong> Ad revenue is the only way the game pays for itself.</li>
+      <li><strong>To fix crashes.</strong> A crash report tells us which line of code broke
+        and on which device.</li>
+      <li><strong>To improve levels.</strong> If ninety per cent of players quit on level 48,
+        that level is badly tuned and we rebuild it.</li>
+      <li><strong>To prevent fraud and abuse</strong>, including invalid ad traffic.</li>
+    </ul>
+    <p>We do not sell your data. We do not build advertising profiles ourselves, and we
+      do not combine any of this with information from outside the app.</p>
+
+    <h2 id="legal"><span class="n">5</span>Legal basis (UK and EU players)</h2>
+    <ul>
+      <li><strong>Consent</strong> — for personalised advertising and for analytics, where
+        required. We ask through a Google-certified consent form the first time you open
+        the game, and you can change your answer later in Settings → Privacy options.</li>
+      <li><strong>Legitimate interests</strong> — for crash reporting, security and
+        fraud prevention, and for showing non-personalised ads where you decline consent.</li>
+    </ul>
+
+    <h2 id="choices"><span class="n">6</span>Your choices</h2>
+    <ul>
+      <li><strong>Turn off personalised ads.</strong> Android Settings → Privacy →
+        Ads → Delete advertising ID. You will still see ads, but they will be generic.</li>
+      <li><strong>Change your consent answer.</strong> Open the game, go to Settings →
+        Privacy options.</li>
+      <li><strong>Opt out across Google.</strong>
+        <a href="https://adssettings.google.com" rel="noopener">Google Ad Settings</a>.
+      </li>
+      <li><strong>Remove everything.</strong> Uninstalling the app deletes all local data.
+        To ask us to delete diagnostic data associated with your installation, email
+        <a href="mailto:contact.feedback.store@gmail.com">contact.feedback.store@gmail.com</a>.
+      </li>
+    </ul>
+
+    <h2 id="rights"><span class="n">7</span>Your rights</h2>
+    <p>Depending on where you live, you may have the right to access, correct, delete or
+      export your data, to object to processing, or to withdraw consent. UK and EU
+      residents hold these rights under the GDPR; California residents hold comparable
+      rights under the CCPA, including the right not to be discriminated against for
+      exercising them.</p>
+    <p>Email <a href="mailto:contact.feedback.store@gmail.com">contact.feedback.store@gmail.com</a> and we will
+      respond within 30 days. Because the app has no accounts, we may need the
+      advertising ID or app instance ID from your device to find any records at all —
+      often there are none we can link to you. EU and UK residents may also complain to
+      their national data protection authority.</p>
+
+    <h2 id="children"><span class="n">8</span>Children</h2>
+    <p><span class="fill">Arrow Rush: Puzzle Game</span> is not directed at children under 13, and we do not knowingly
+      collect
+      personal information from them. Where our ad partner detects or is told that a user
+      is a child, ads are served in a non-personalised, child-directed mode. If you are a
+      parent and believe your child has provided us with personal information, email us
+      and we will delete it.</p>
+
+    <h2 id="retention"><span class="n">9</span>How long we keep it</h2>
+    <ul>
+      <li>Analytics events: retained by Firebase for up to 14 months, then deleted.</li>
+      <li>Crash reports: retained for up to 90 days.</li>
+      <li>Advertising data: governed by Google's own retention schedule.</li>
+      <li>Local game progress: kept on your device until you uninstall or clear app data.</li>
+      <li>Support emails: kept for up to 24 months, then deleted.</li>
+    </ul>
+
+    <h2 id="security"><span class="n">10</span>Security</h2>
+    <p>All data leaving the app travels over encrypted HTTPS connections. No method of
+      transmission is perfectly secure, but since we hold no accounts, passwords or
+      payment details, there is very little about you for anyone to steal.</p>
+
+    <h2 id="transfers"><span class="n">11</span>International transfers</h2>
+    <p>Google processes this data on servers in the United States and other countries.
+      Where data leaves the UK or EEA, Google relies on Standard Contractual Clauses
+      approved by the European Commission.</p>
+
+    <h2 id="changes"><span class="n">12</span>Changes to this policy</h2>
+    <p>If we add a feature that changes what we collect, we will update this page and move
+      the "Last updated" date. Significant changes will also be announced in the app's
+      release notes on Google Play. Continuing to play after a change means you accept the
+      updated policy.</p>
+
+    <h2 id="contact"><span class="n">13</span>Contact</h2>
+    <p>VISION36<br>
+      Email: <a href="mailto:contact.feedback.store@gmail.com">contact.feedback.store@gmail.com</a><br>
+      Country: India</p>
+    <p>This policy is governed by the laws of India.</p>
+
+  </main>
+
+  <footer class="wrap">
+    <p><span class="fill">Arrow Rush: Puzzle Game</span> by VISION36 · Privacy Policy · Effective 19 September 2026</p>
+  </footer>
+
+</body>
+
+</html>
